@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="reset.css" >
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300&display=swap" rel="stylesheet">
+	<title>Avaliação Open Source</title>
+</head>
+<body>
+	<header class="cabecalho-inicial">
+		<div>
+			<h1>Avaliação Open Source</h1>
+			<p>Esse é o momento de você nos avaliar e fazer da nossa comunidade um lugar melhor para você estar.</p>
+		</div>
+	</header>
+
+	<main>
+		<form class="formulario">
+				<fieldset>
+					<fieldset>
+						<label for="nomesobrenome" class="nomeesobrenome"> Nome:</label>
+						<input type="text" id="nomeesobrenome" class="informacoes-gerais" placeholder="Coloque seu nome aqui" required>
+
+						<label for="email" class="email"> Email:</label>
+						<input type="text" id="email" class="informacoes-gerais" placeholder="Coloque seu email aqui" required>
+
+						<label for="idade" class="idade"> Idade:</label>
+						<input type="text" id="idade" class="informacoes-gerais" placeholder="Coloque sua idade aqui">
+					</fieldset>
+					<fieldset class="favorita">
+						<legend required> Seleciona a opção que melhor define você:</legend>
+						<select>
+							<option disabled selected value>Selecione a opção</option>
+							<option>Estudante</option>
+							<option>Trabalho período integral</option>
+							<option>Trabalho meio período</option>
+							<option>Freelancer</option>
+							<option>Outras opções</option>
+							<option>Prefiro não dizer</option>
+						</select>
+					</fieldset>
+				</fieldset>	
+				<fieldset>
+					<fieldset class="recomenda">
+						<legend>Você recomendaria o nosso serviço a um amigo:</legend>
+							<input type="radio" name="1" class="checkbox-feature">Sim, com certeza
+							<input type="radio" name="1" class="checkbox-feature">Talvez
+							<input type="radio" name="1" class="checkbox-feature">Não, me desculpa
+					</fieldset>
+
+					<fieldset class="feature">
+						<legend> Qual feature você gostaria que fosse implementada no nosso sistema?</legend>
+							<p>(Marque as opções que devem ser implementadas)</p>
+							<label class="checkbox"><input type="checkbox" name="front-end"> Front-end </label>
+							<label class="checkbox"><input type="checkbox" name="back-end"> Back-end </label>
+							<label class="checkbox"><input type="checkbox" name="data"> Data Visualization </label>
+							<label class="checkbox"><input type="checkbox" name="challenges"> Challenges</label>
+							<label class="checkbox"><input type="checkbox" name="open-source"> Open Source Community</label>
+							<label class="checkbox"><input type="checkbox" name="gitter"> Gitter helps romms</label>
+							<label class="checkbox"><input type="checkbox" name="videos"> Vídeos </label>
+							<label class="checkbox"><input type="checkbox" name="meetups"> City Meetups</label>
+							<label class="checkbox"><input type="checkbox" name="wiki"> Wiki</label>
+							<label class="checkbox"><input type="checkbox" name="forum"> Fórum</label>
+							<label class="checkbox"><input type="checkbox" name="courses"> Additional Courses</label>
+					</fieldset>
+
+					<fieldset class="favorita">
+						<legend> Qual é a sua feature favorita em relaçao a nossa comunidade?</legend>
+						<select>
+							<option disabled selected value>Selecione a opção</option>
+							<option>Desafios</option>
+							<option>Cursos</option>
+							<option>Fóruns</option>
+							<option>Lives</option>
+						</select>
+					</fieldset>
+
+					<fieldset  class="comentario">
+						<legend>Deixa aqui o seu comentário ou sugestão: </legend>
+						<textarea cols="100" rows="10" id="mensagem" class="input-padrao" placeholder="Escreva seu feedback aqui!" required></textarea>
+					</fieldset>
+	
+					<fieldset>
+						<input type="submit" value="Enviar Formulário" class="enviar">
+					</fieldset>
+			</fieldset>
+		</form>
+	</main>
+</body>
+</html>
